@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>
+            Air Ticket Price Prediction
+        </title>
+    </head>
+    <body>
+        <form method="post" action="predict">
+            <label for="Total_Stops">Enter Total Stops for Airways:</label>
+            <input type="text" name="Total_Stops" size="50" placeholder="Enter Total Stops in numbers">
+            <br>
+            <br>
+            <label for="Route_1">Enter first stop(Source):</label>
+            <input type="text" name="Route_1" size="50" placeholder="Enter first stop(like BLR, DEL)">
+            <br>
+            <br>
+            <label for="Route_2">Enter second stop(destination if no other stops):</label>
+            <input type="text" name="Route_2" size="50" placeholder="Enter second stop(like BLR, DEL)">
+            <br>
+            <br>
+            <label for="Route_3">Enter third stop(destination if no other stops else None):</label>
+            <input type="text" name="Route_3" size="50" placeholder="Enter third stop(like BLR, DEL)">
+            <br>
+            <br>
+            <label for="Route_4">Enter fourth stop(destination if no other stops else None):</label>
+            <input type="text" name="Route_4" size="50" placeholder="Enter fourth stop(like BLR, DEL)">
+            <br>
+            <br>
+            <label for="Route_5">Enter last stop(destination else None):</label>
+            <input type="text" name="Route_5" size="50" placeholder="Enter last stop(like BLR, DEL)">
+            <br>
+            <br>    
+            <label for="Air_India">Air_India:</label>
+            <input type="text" name="Air_India" size="50" placeholder="Enter 1 if Airways is Air_India else 0">
+            <br>
+            <br>    
+            <label for="GoAir">GoAir:</label>
+            <input type="text" name="GoAir" size="50" placeholder="Enter 1 if Airways is GoAir else 0">
+            <br>
+            <br>    
+            <label for="IndiGo">IndiGo:</label>
+            <input type="text" name="IndiGo" size="50" placeholder="Enter 1 if Airways is IndiGo else 0">
+            <br>
+            <br>    
+            <label for="Jet_Airways">Jet_Airways:</label>
+            <input type="text" name="Jet_Airways" size="50" placeholder="Enter 1 if Airways is Jet_Airways else 0">
+            <br>
+            <br>    
+            <label for="Jet_Airways_Business">Jet_Airways_Business:</label>
+            <input type="text" name="Jet_Airways_Business" size="50" placeholder="Enter 1 if Airways is Jet_Airways_Business else 0">
+            <br>
+            <br>    
+            <label for="Multiple_carriers">Multiple_carriers:</label>
+            <input type="text" name="Multiple_carriers" size="50" placeholder="Enter 1 if Multiple_carriers else 0">
+            <br>
+            <br>    
+            <label for="Multiple_carriers_Premium_economy">Multiple_carriers_Premium_economy:</label>
+            <input type="text" name="Multiple_carriers_Premium_economy" size="50" placeholder="Enter 1 if Multiple_carriers_Premium_economy else 0">
+            <br>
+            <br>    
+            <label for="SpiceJet">SpiceJet:</label>
+            <input type="text" name="SpiceJet" size="50" placeholder="Enter 1 if SpiceJet else 0">
+            <br>
+            <br>    
+            <label for="Vistara">Vistara:</label>
+            <input type="text" name="Vistara" size="50" placeholder="Enter 1 if Vistara else 0">
+            <br>
+            <br>    
+            <label for="Vistara_Premium_economy">Vistara_Premium_economy:</label>
+            <input type="text" name="Vistara_Premium_economy" size="50" placeholder="Enter 1 if Vistara_Premium_economy else 0">
+            <br>
+            <br>    
+            <label for="source_Kolkata">source Kolkata:</label>
+            <input type="text" name="source_Kolkata" size="50" placeholder="Enter 1 if source is Kolkata else 0">
+            <br>
+            <br>    
+            <label for="source_Mumbai">source Mumbai:</label>
+            <input type="text" name="source_Mumbai" size="50" placeholder="Enter 1 if source is Mumbai else 0">
+            <br>
+            <br>    
+            <label for="dest_Kolkata">destination Kolkata:</label>
+            <input type="text" name="dest_Kolkata" size="50" placeholder="Enter 1 if destination is Kolkata else 0">
+            <br>
+            <br>    
+            <label for="dest_New_Delhi">destination NewDelhi:</label>
+            <input type="text" name="dest_New_Delhi" size="50" placeholder="Enter 1 if destination is New_Delhi else 0">
+            <br>
+            <br>    
+            <label for="Journey_day">Enter Journey day:</label>
+            <input type="text" name="Journey_day" size="50" placeholder="Enter Journey_day(1 to 31)">
+            <br>
+            <br>    
+            <label for="Journey_month">Enter Journey month:</label>
+            <input type="text" name="Journey_month" size="50" placeholder="Enter Journey_month(1 to 12)">
+            <br>
+            <br>    
+            <label for="Dep_Time_hour">Enter DepartureTimeHour:</label>
+            <input type="text" name="Dep_Time_hour" size="50" placeholder="Enter DepartureTimehour(24 hrs)">
+            <br>
+            <br>    
+            <label for="Dep_Time_minute">Enter DepartureTimeMinute:</label>
+            <input type="text" name="Dep_Time_minute" size="50" placeholder="Enter DepartureTimeMinute(0-60)">
+            <br>
+            <br>    
+            <label for="Arrival_Time_hour">Enter ArrivalTimeHour:</label>
+            <input type="text" name="Arrival_Time_hour" size="50" placeholder="Enter ArrivalTimeHour(24 hrs)">
+            <br>
+            <br>    
+            <label for="Arrival_Time_minute">Enter ArrivalTimeMinute:</label>
+            <input type="text" name="Arrival_Time_minute" size="50" placeholder="Enter ArrivalTimeMinute(0-60)">
+            <br>
+            <br>    
+            <label for="Duration_hours">Enter DurationHours:</label>
+            <input type="text" name="Duration_hours" size="50" placeholder="Enter DurationHours(24 hrs)">
+            <br>
+            <br>    
+            <label for="Duration_mins">Enter DurationMins:</label>
+            <input type="text" name="Duration_mins" size="50" placeholder="Enter DurationMins(0-60)">
+            <br>
+            <br>    
+
+            <button type="submit">Predict</button>
+        </form>
+    </body>
+</html>
